@@ -1,0 +1,110 @@
+﻿@model EmployeeProfile.Models.EmployeeView
+@{
+    ViewData["Title"] = "Create";
+}
+
+@{
+
+    IEnumerable<Hobby> hobbies = ViewData["Hobbies"] as IEnumerable<Hobby>;
+}
+
+<h2>Create</h2>
+
+<h4>Employee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailId" class="control-label"></label>
+                <input asp-for="EmailId" class="form-control" />
+                <span asp-validation-for="EmailId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateofBirth" class="control-label"></label>
+                <input asp-for="DateofBirth" class="form-control" />
+                <span asp-validation-for="DateofBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label> <br />
+                @{var genders = Enum.GetValues(typeof(Gender));}
+                @foreach (object gender in genders)
+                {
+                    @Html.RadioButtonFor(g => g.Gender, gender) @gender.ToString()
+                    <br />
+                }
+            </div>
+            <div class="form-group">
+                @for (int i = 0; i < Model.CheckHobbies.Capacity; i++)
+                {
+                    @Html.CheckBoxFor(Model => Model.CheckHobbies[i].IsChecked)
+                    @Html.DisplayFor(Model => Model.CheckHobbies[i].Title)
+                    @Html.HiddenFor(Model => Model.CheckHobbies[i].ID)
+                    <br />
+                }
+                @*<label asp-for="CheckHobbies" class="control-label"></label> <br />
+                @foreach(Hobby hobby in hobbies)
+                {
+                    <input asp-for="EmployeeHobbies.Hobby.HobbyName" type="checkbox" value="@hobby.HobbyName" checked="@hobby.IsChecked" /> @hobby.HobbyName <br />
+                }*@
+            </div>
+            <div class="form-group">
+                <label asp-for="Address.Street" class="control-label"></label>
+                <input asp-for="Address.Street" class="form-control" />
+                <span asp-validation-for="Address.Street" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address.ApartmentNumber" class="control-label"></label>
+                <input asp-for="Address.ApartmentNumber" class="form-control" />
+                <span asp-validation-for="Address.ApartmentNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address.City" class="control-label"></label>
+                <input asp-for="Address.City" class="form-control" />
+                <span asp-validation-for="Address.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address.State" class="control-label"></label>
+                <input asp-for="Address.State" class="form-control" />
+                <span asp-validation-for="Address.State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address.Country" class="control-label"></label>
+                <input asp-for="Address.Country" class="form-control" />
+                <span asp-validation-for="Address.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address.ZipCode" class="control-label"></label>
+                <input asp-for="Address.ZipCode" class="form-control" />
+                <span asp-validation-for="Address.ZipCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

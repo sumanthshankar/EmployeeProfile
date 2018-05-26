@@ -1,0 +1,22 @@
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.deps.json
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.runtimeconfig.json
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.runtimeconfig.dev.json
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.dll
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.pdb
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.csprojAssemblyReference.cache
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.csproj.CoreCompileInputs.cache
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.AssemblyInfoInputs.cache
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.AssemblyInfo.cs
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.dll
+C:\Users\Brand2Fly PC\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.pdb
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.deps.json
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.runtimeconfig.json
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.runtimeconfig.dev.json
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.dll
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\bin\Debug\netcoreapp2.0\EmployeeProfile.pdb
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.csprojResolveAssemblyReference.cache
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.csproj.CoreCompileInputs.cache
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.AssemblyInfoInputs.cache
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.AssemblyInfo.cs
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.dll
+C:\Users\guruj\source\repos\EmployeeProfile\EmployeeProfile\obj\Debug\netcoreapp2.0\EmployeeProfile.pdb

@@ -1,0 +1,85 @@
+﻿@model EmployeeProfile.Models.Employee
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmailId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateofBirth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateofBirth)
+        </dd>
+    </dl>
+    <h4>@Html.DisplayNameFor(model => model.Address)</h4>
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Address.AddressID)</th>
+            <th>@Html.DisplayNameFor(model => model.Address.Street)</th>
+            <th>@Html.DisplayNameFor(model => model.Address.ApartmentNumber)</th>
+            <th>@Html.DisplayNameFor(model => model.Address.City)</th>
+            <th>@Html.DisplayNameFor(model => model.Address.Country)</th>
+            <th>@Html.DisplayNameFor(model => model.Address.ZipCode)</th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Address.AddressID)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Address.Street)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Address.ApartmentNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Address.City)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Address.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Address.ZipCode)
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.EmployeeID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
